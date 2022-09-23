@@ -7,22 +7,20 @@ lista2 = []
 def lista_1(lista, n):
     if n < len(lista):
         if 0 <= lista[n] <= 10:
-                a = lista.pop(n)
-                lista1.append(a)
-                lista_1(lista,n)
+                lista1.append(lista[n])
+                lista_1(lista,n+1)
         else:
-            lista_1(lista, n+1)
+            lista_1(lista, n+2)
     else:
         pass
 
 def lista_2(lista, n):
     if n < len(lista):
         if -10 <= lista[n] <= 0:
-                a = lista.pop(n)
-                lista2.append(a)
-                lista_2(lista,n)
+                lista2.append(lista[n])
+                lista_2(lista,n +1)
         else:
-            lista_2(lista, n+1)
+            lista_2(lista, n+2)
     else:
         pass
 
