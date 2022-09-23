@@ -3,6 +3,8 @@ lista = list(x)
 print(lista)
 lista1 = []
 lista2 = []
+lista3 = []
+lista4 = []
 
 def lista_1(lista, n):
     if n < len(lista):
@@ -24,7 +26,23 @@ def lista_2(lista, n):
     else:
         pass
 
+def lista_3(lista, n):
+    if n < len(lista):
+        if lista[n]%2 == 0:
+            if 0 <= lista[n] <= 20:
+                lista3.append(lista[n])
+                lista_3(lista, n+1)
+            else:
+                lista_3(lista, n+2)
+        else:
+            lista_3(lista, n+1)
+    else:
+        pass
+
+
 lista_1(lista, 0)
 lista_2(lista, 0)
+lista_3(lista, 0)
 print(lista1)
 print(lista2)
+print(lista3)
