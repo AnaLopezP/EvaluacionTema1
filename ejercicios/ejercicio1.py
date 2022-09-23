@@ -9,4 +9,14 @@ matriz = [
 ]
 
 
-def
+def separar(lista):
+    n = 0
+    fila = lista.pop()
+    n = n + 1
+    print(fila)
+    if n <= 3:
+        separar(lista)
+    else:
+        pass
+
+separar(matriz)
