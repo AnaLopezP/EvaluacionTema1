@@ -41,6 +41,7 @@ def correccion(fila):
 
 def nueva_matriz(fila):
     matriz.append(fila)
+    print("matriz correcta")
     print(matriz)
 
 separar(matriz, 0)
