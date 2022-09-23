@@ -41,7 +41,7 @@ def lista_3(lista, n):
 
 def lista_4(lista, n):
     if n < len(lista):
-        if lista[n]%2 == 0:
+        if lista[n]%2 == 1:
             if -20 <= lista[n] <= 0:
                 lista4.append(lista[n])
                 lista_4(lista, n+1)
