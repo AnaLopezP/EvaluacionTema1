@@ -1,6 +1,3 @@
-from numpy import true_divide
-
-
 cadena = str(input())
 
 def cadena_a_lista(cadena):
