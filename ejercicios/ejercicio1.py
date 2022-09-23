@@ -15,7 +15,14 @@ def separar(lista, n):
         print(fila)
         n = n + 1
         separar(lista, n)
+        sumar_num(fila)
     else:
         pass
+
+
+def sumar_num(fila):
+    num = sum(fila)
+    print(num)
+
 
 separar(matriz, 0)
