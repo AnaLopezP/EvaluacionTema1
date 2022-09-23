@@ -5,7 +5,6 @@ matriz = [
     [4, 4, 4, 13]
 ]
 
-
 def separar(lista, n):
     if n<= 3:
         fila = lista.pop()
