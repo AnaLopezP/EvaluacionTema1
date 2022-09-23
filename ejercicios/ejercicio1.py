@@ -2,21 +2,20 @@ from ast import Num
 
 
 matriz = [
-    [1, 1, 1, 3]
-    [2, 2, 2, 7]
-    [3, 3, 3, 9]
+    [1, 1, 1, 3],
+    [2, 2, 2, 7],
+    [3, 3, 3, 9],
     [4, 4, 4, 13]
 ]
 
 
-def separar(lista):
-    n = 0
-    fila = lista.pop()
-    n = n + 1
-    print(fila)
-    if n <= 3:
-        separar(lista)
+def separar(lista, n):
+    if n<= 3:
+        fila = lista.pop()
+        print(fila)
+        n = n + 1
+        separar(lista, n)
     else:
         pass
 
-separar(matriz)
+separar(matriz, 0)
