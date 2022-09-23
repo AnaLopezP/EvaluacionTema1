@@ -5,6 +5,7 @@ lista1 = []
 lista2 = []
 lista3 = []
 lista4 = []
+lista5 = []
 
 def lista_1(lista, n):
     if n < len(lista):
@@ -52,12 +53,27 @@ def lista_4(lista, n):
     else:
         pass
 
+def lista_5(lista, n):
+    if n < len(lista):
+        if lista[n]%5 == 0:
+            if 0 <= lista[n] <= 50:
+                lista5.append(lista[n])
+                lista_5(lista, n+1)
+            else:
+                lista_5(lista, n+2)
+        else:
+            lista_5(lista, n+1)
+    else:
+        pass
+
 
 lista_1(lista, 0)
 lista_2(lista, 0)
 lista_3(lista, 0)
 lista_4(lista, 0)
+lista_5(lista, 0)
 print(lista1)
 print(lista2)
 print(lista3)
 print(lista4)
+print(lista5)
