@@ -14,6 +14,7 @@ def separar(lista, n):
         separar(lista, n)
         sumar_num(fila)
         correccion(fila)
+        nueva_matriz(fila)
     else:
         pass
 
@@ -39,5 +40,8 @@ def correccion(fila):
     else: 
         pass
 
+def nueva_matriz(fila):
+    matriz.append(fila)
+    print(matriz)
 
 separar(matriz, 0)
