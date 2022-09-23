@@ -39,10 +39,25 @@ def lista_3(lista, n):
     else:
         pass
 
+def lista_4(lista, n):
+    if n < len(lista):
+        if lista[n]%2 == 0:
+            if -20 <= lista[n] <= 0:
+                lista4.append(lista[n])
+                lista_4(lista, n+1)
+            else:
+                lista_4(lista, n+2)
+        else:
+            lista_4(lista, n+1)
+    else:
+        pass
+
 
 lista_1(lista, 0)
 lista_2(lista, 0)
 lista_3(lista, 0)
+lista_4(lista, 0)
 print(lista1)
 print(lista2)
 print(lista3)
+print(lista4)
