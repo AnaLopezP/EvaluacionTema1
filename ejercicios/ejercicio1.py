@@ -13,6 +13,7 @@ def separar(lista, n):
         n = n + 1
         separar(lista, n)
         sumar_num(fila)
+        correccion(fila)
     else:
         pass
 
@@ -30,6 +31,13 @@ def quitar_error(num, fila):
         fila.pop(3)
         print(fila)
 
+def correccion(fila):
+    if len(fila) == 3:
+        num_bien = sum(fila)
+        fila.append(num_bien)
+        print(fila)
+    else: 
+        pass
 
 
 separar(matriz, 0)
